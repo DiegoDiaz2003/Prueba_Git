@@ -1,0 +1,41 @@
+PS D:\Documentos\Escritorio\programacion\Git> git init
+Initialized empty Git repository in D:/Documentos/Escritorio/programacion/Git/.git/
+
+
+PS D:\Documentos\Escritorio\programacion\Git> git commit -m "version 0.1" (es la cajita)
+
+PS D:\Documentos\Escritorio\programacion\Git> git status
+
+PS D:\Documentos\Escritorio\programacion\Git> git log
+commit 7bbb8b5840520d4192e95740c1f25572389ec8ab (HEAD -> master)
+Date:   Fri Aug 4 18:34:23 2023 -0500
+
+    version 0.1
+PS D:\Documentos\Escritorio\programacion\Git> git status
+On branch master
+nothing to commit, working tree clean
+PS D:\Documentos\Escritorio\programacion\Git> git status
+
+On branch master
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\Documentos\Escritorio\programacion\Git> git add .
+PS D:\Documentos\Escritorio\programacion\Git> git commit -m "version 0.2"
+[master 14eed00] version 0.2
+ 1 file changed, 11 insertions(+)
+PS D:\Documentos\Escritorio\programacion\Git> git log
+commit 14eed001f756fef54bd60cc06bb991dbeaa073c1 (HEAD -> master)
+Author: SukeUchiha <diegoalejandrodiazramos@gmail.com>
+Date:   Fri Aug 4 18:37:36 2023 -0500
+
+    version 0.2
+
+commit 7bbb8b5840520d4192e95740c1f25572389ec8ab
+Author: SukeUchiha <diegoalejandrodiazramos@gmail.com>
+Date:   Fri Aug 4 18:34:23 2023 -0500
+
+git config --global alias.tree "log --graph --decorate --all --oneline"
+git tree
